@@ -1,0 +1,578 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+
+/* header */
+
+.header {
+    position: fixed;
+    background-color: #fff !important;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%) ;
+    z-index: 100;
+}
+
+.header .container{
+    position: relative;
+    left: -31px;
+}
+
+
+.header .container .logo {
+    margin-left: 100px;
+}
+
+.header .logo a{
+    color: #dc4f72;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.menu .active-link{
+    color: #dc4f72;
+}
+
+.header .container .menu{ 
+    color: black;
+    /* border: 1px solid #dc4f72; */
+}
+
+
+.menu a{
+    margin-right: 35px;
+    color: black;
+    position: relative;
+}
+
+
+.menu a:hover{
+    color: #dc4f72;
+    transition: all 0.5s;
+}
+
+.menu a i{
+    font-size: 10px;
+    color: rgb(137, 137, 137);
+}
+
+.menu a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: #dc4f72;
+    transition: width 0.5s;
+}
+
+.menu a:hover::after{
+    width: 50%;
+    transition: width 0.5s;
+}
+
+.header button{
+    color: #dc4f72;
+    background-color: #fff;
+    border: 1px solid #dc4f72;
+    border-radius: 5px;
+    padding: 15px 35px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header button:hover{
+    background-color: #dc4f72;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+/* carousel */
+
+.carousel{
+    /* position: fixed; */
+    background-image: url(../images/101.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.carousel .container{
+    /* border: 1px solid red; */
+    padding: 0px 30px;
+    padding-top: 87px;
+    padding-right: 110px;
+    width: 100%;
+    height: 580px;
+}
+
+
+.carousel .container-custom{
+    background: rgba(255, 255, 255, .95);
+}
+
+.carousel .carousel-content h1{
+    font-size: 50px;   
+    font-weight: 700;
+}
+
+.carousel-content p{
+    font-size: 20px;
+    padding-right: 130px;
+    margin: 20px 0px;
+}
+
+.carousel button{
+    border: 1px solid #dc4f72;
+    color: #dc4f72;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.carousel button:hover{
+    background-color: #dc4f72;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.carousel .carousel-image img{
+    position: relative;
+}
+
+/* tools */
+
+.tools .title {
+    margin: 60px 256px;
+}
+
+.tools .title h3{
+    font-size: 16px;
+    color: #dc4f72;
+    font-weight: 700;
+}
+
+.tools .title h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.tools .title p{
+    font-size: 16px;
+}
+
+.tools .tool-items .card{
+    background-color: #f7f9fc;
+    transform: translateY(0px);
+    transition: all .5s;
+}
+
+.tools .tool-items .card:hover{
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 10px rgba(188, 178, 178, 0.2);
+    transform: translateY(-5px);
+    transition: all .5s;
+}
+
+.tools .tool-items .img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* company-intro */
+
+
+.company-intro {
+    background-color: #f7f9fc;
+    margin: 55px 0px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+.company-intro .intro-content h3{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #dc4f72;
+    margin-bottom: 5px;
+}
+
+.company-intro .intro-content h1{
+    font-size: 35px;
+    line-height: 40px;
+    color: #000;
+    font-weight: 700;
+}
+
+.company-intro .intro-content p{
+    font-size: 16px;
+    line-height: 24.4px;
+}
+
+.company-intro .intro-content button{
+    background-color: #dc4f72;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.company-intro .intro-content button:hover{
+    background-color: #d62f58;
+    transition: all .5s;
+}
+
+
+.container .company-intro .intro-img{
+    padding-left: 00px;
+}
+
+.company-intro .intro-img img{
+    max-width: 100%;
+    height: auto;
+    transform: translateY(0px);
+    transition: all .5s;
+}
+
+.company-intro .intro-img img:hover{
+    transform: translateY(-10px);
+    transition: all .5s;
+}
+
+/* statis */
+
+.statis{
+    padding: 0px 333px;
+}
+
+.company-intro .statis .card{
+    padding: 15px 0px;
+    padding-top: 30px;
+    padding-left: 30px;
+    box-shadow: 0px 5px 5px 5px rgba(188, 178, 178, 0.075);
+    transform: translateY(-5px);
+    transition: all .5s;
+}
+
+.company-intro .statis .card:hover{
+    box-shadow: 0px 5px 5px 5px rgba(188, 178, 178, 0.2);
+    transform: translateY(-5px);
+    transition: all .5s;
+}
+
+
+.company-intro .statis .card h4{
+    font-size: 16px;
+    line-height: 24.5px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.company-intro .statis .card h1{
+    font-size: 50px;
+    line-height: 1;
+    color: #dc4f72;
+    margin-bottom: 0;
+    font-weight: 800;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+/* slogan */
+
+.slogan{
+    background-image: url(../images/107.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.slogan .slogan-custom{
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33));
+}
+
+.slogan .container{
+    margin-left: 360px;
+    padding-right: 385px;
+}
+
+.slogan .container .slogan-content h1{
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.slogan .container .slogan-content p{
+    font-size: 16px;
+    line-height: 24.4px;
+    color: #ffffff;
+}
+
+.slogan .container button{
+    background-color: #ffffff;
+    color: #000;
+    font-size: 14px;
+    padding: 15px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.slogan .container button:hover{
+    background-color: #eaeff8;
+    transition: all .5s;
+}
+
+/* solutions */
+
+.solution-title h3{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #dc4f72;
+    margin-bottom: 5px;
+}
+
+.solution-title h1{
+    font-size: 45px;
+    line-height: 40px;
+    color: #000;
+    font-weight: 700;
+}
+
+.solution-titlep{
+    font-size: 16px;
+    line-height: 24.4px;
+}
+
+.solution-content .card{
+    position: relative;
+    transform: translateY(0px);
+    transition: all .5s;
+}
+
+.solution-content .card:hover{
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 10px rgba(188, 178, 178, 0.2);
+    transform: translateY(-5px);
+    transition: all .5s;
+}
+
+
+.solution-content .card .dark{
+    filter: grayscale(1);
+    transition: all 1;
+}
+
+.solution-content .card-body .date{
+    position: absolute;
+    background-color: #dc4f72;
+    font-size: 18px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    font-weight: 700;
+    top:0;
+    right: 0;
+    width: 140px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.solution-content .card-body .label{
+    background-color: rgba(238, 97, 120, 0.2);
+    color: #dc4f72;
+    padding: 5px 16px;
+    padding-bottom: 3px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    }
+
+.solution-content .card-body .card-title a{
+    font-size: 22px;
+    line-height: 27px;
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+.solution-content .card:hover a{
+    color: #dc4f72;
+    transition: all 0.5s;
+}
+
+.solution-content .card:hover .dark{
+    color: #dc4f72;
+    filter: grayscale(0);
+    transition: all 0.5s;
+}
+
+
+.solution-content .card-body .button{
+    color: #dc4f72;
+    font-weight: 600;
+    margin: 10px 0px;
+    padding: 0px 0px;
+    padding-top: 20px;
+}
+
+
+.solution-content .card-body .button span{
+    font-size: 55%;
+    font-weight: 800;
+    padding-left: 0px;
+    transition: all 0.5s;
+}
+
+.solution-content .card:hover span{
+    padding-left: 5px;
+    transition: all 0.5s;
+}
+
+.solution-content .card-body::after{
+    content: '';
+    position: absolute;
+    bottom: 70px;
+    left: 16px;
+    height: 1px;
+    width: 90%;
+    background: #e7e4e4;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .header{
+        height: 150px;
+        width: 100%;
+    }
+
+    .header .container .menu{ 
+        color: black;
+        position: absolute;
+        bottom: -50px;
+        left: 100px;
+        width: 100%;
+        /* border: 1px solid #dc4f72; */
+    }
+
+    .header .container .menu a{ 
+        margin: 10px;
+        /* border: 1px solid #dc4f72; */
+    }
+
+    .company-intro .intro-content button{
+        width: 100px;
+        text-transform: uppercase;
+        transition: all .5s;
+    }
+
+
+    .carousel .container-custom{
+        background-color: #fff;
+    }
+
+    .carousel .carousel-content h1{
+        padding-top: 50px;
+    }
+
+    .carousel .carousel-content h1{
+        font-size: 20px;   
+        font-weight: 700;
+    }
+    
+    .carousel-content p{
+        font-size: 16px;
+        padding-right: 0px;
+        margin: 0px;
+    }
+
+    /* -------------------------------------- */
+
+    .tools .title{
+        padding-top: 50px;
+        margin: 0;
+    }
+
+    .tools .title h3{
+        font-size: 16px;   
+        font-weight: 700;
+    }
+
+    .tools .title h1{
+        font-size: 20px;   
+        font-weight: 700;
+    }
+
+    .tools .title p{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .header{
+        height: 120px;
+    }
+
+    .header .container .menu{ 
+        color: black;
+        position: absolute;
+        bottom: -10px;
+        left: 100px;
+        width: 100%;
+
+    }
+
+    .header .container .menu a{ 
+        margin: 10px;
+    }
+
+    .company-intro .intro-content button{
+        width: 100px;
+        text-transform: uppercase;
+        transition: all .5s;
+    }
+
+    /* -------------------------------------------- */
+
+    .carousel{
+        width: 100%;
+    }
+
+    .carousel .container-custom{
+        width: 100%;
+        
+    }
+
+    .carousel .carousel-content h1{
+        padding-top: 50px;
+    }
+
+    .carousel .carousel-content h1{
+        font-size: 20px;   
+        font-weight: 700;
+    }
+    
+    .carousel-content p{
+        font-size: 16px;
+        padding-right: 0px;
+        margin: 0px;
+    }
+
+}
+
+
